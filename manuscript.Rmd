@@ -1,0 +1,61 @@
+---
+title             : "Reproducible workflows with R and Markdown"
+shorttitle        : "Reproducible workflows"
+
+author: 
+  - name          : "Scott Claessens"
+    affiliation   : "1"
+    corresponding : yes
+    address       : "Floor 2, Building 302, 23 Symonds Street, Auckland, 1010, New Zealand"
+    email         : "scott.claessens@gmail.com"
+
+affiliation:
+  - id            : "1"
+    institution   : "School of Psychology, University of Auckland, New Zealand"
+
+authornote: |
+  
+
+abstract: |
+  Abstract here.
+  
+keywords          : ""
+wordcount         : ""
+
+bibliography      : ["references.bib"]
+
+floatsintext      : no
+figurelist        : no
+figsintext        : yes
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_word
+header-includes   : \raggedbottom
+---
+
+Hello, this is my introduction[@Baker2016].
+
+# Methods
+
+# Results
+
+Woo, we found a significant difference between groups (b = `r printnum(summary(readd(model))$coefficients[2,1])`).
+
+# Discussion
+
+\newpage
+
+# References
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id="refs" custom-style="Bibliography"></div>
+\endgroup
